@@ -3,37 +3,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="@dimen/activity_horizontal_margin"
-    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/gpc_background"
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/chat"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="214dp"
+        android:layout_marginEnd="30dp"
+        android:alpha="0.8"
+        android:background="@drawable/main_button"
+        android:gravity="start"
+        android:onClick="onChatClicked"
+        android:orientation="horizontal">
 
-        <Button
-            android:layout_width="match_parent"
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_chat" />
+
+        <TextView
+            android:id="@+id/chatText"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onChatClicked"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
             android:text="@string/chat_button"
-            android:textSize="@dimen/button_text_size" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onLoginClicked"
-            android:text="@string/login_button"
-            android:textSize="@dimen/button_text_size" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onAnimationClicked"
-            android:text="@string/animation_button"
-            android:textSize="@dimen/button_text_size" />
+            android:textAlignment="textStart"
+            android:textColor="#1B1E1F"
+            android:textSize="16sp" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/chat"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/main_button"
+        android:gravity="start"
+        android:alpha="0.8"
+        android:onClick="onLoginClicked"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_lock" />
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/login_button"
+            android:textAlignment="textStart"
+            android:textColor="#1B1E1F"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/animation"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/login"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="213dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="start"
+        android:background="@drawable/main_button"
+        android:alpha="0.8"
+        
+        android:onClick="onAnimationClicked"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="22dp"
+            android:background="@drawable/ic_animation"/>
+
+        <TextView
+            android:id="@+id/animationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/animation_button"
+            android:textAlignment="textStart"
+            android:textColor="#1B1E1F"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
 
 </RelativeLayout>
