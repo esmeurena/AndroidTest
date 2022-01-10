@@ -8,5 +8,6 @@
     <string name="animation_button">ANIMATION</string>
     <string name="email_hint">Email</string>
     <string name="password_hint">Password</string>
+    <string name="fade">FADE IN</string>
 
 </resources>
