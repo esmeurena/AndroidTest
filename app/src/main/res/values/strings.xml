@@ -6,5 +6,7 @@
     <string name="chat_button">CHAT</string>
     <string name="login_button">LOGIN</string>
     <string name="animation_button">ANIMATION</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
 
 </resources>

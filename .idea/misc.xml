@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/esmeu/Desktop/AndroidTest/app/src/main/res/drawable/blue_button.xml" value="0.3764102564102564" />
         <entry key="..\:/Users/esmeu/Desktop/AndroidTest/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26296296296296295" />
         <entry key="..\:/Users/esmeu/Desktop/AndroidTest/app/src/main/res/drawable/ic_lock.xml" value="0.26296296296296295" />
+        <entry key="..\:/Users/esmeu/Desktop/AndroidTest/app/src/main/res/drawable/line.xml" value="0.26851851851851855" />
         <entry key="..\:/Users/esmeu/Desktop/AndroidTest/app/src/main/res/drawable/main_button.xml" value="0.26296296296296295" />
+        <entry key="..\:/Users/esmeu/Desktop/AndroidTest/app/src/main/res/layout/activity_animation.xml" value="0.16111111111111112" />
         <entry key="..\:/Users/esmeu/Desktop/AndroidTest/app/src/main/res/layout/activity_chat.xml" value="0.33" />
-        <entry key="..\:/Users/esmeu/Desktop/AndroidTest/app/src/main/res/layout/activity_main.xml" value="0.6596434359805511" />
+        <entry key="..\:/Users/esmeu/Desktop/AndroidTest/app/src/main/res/layout/activity_login.xml" value="0.48534201954397393" />
+        <entry key="..\:/Users/esmeu/Desktop/AndroidTest/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Users/esmeu/Desktop/AndroidTest/app/src/main/res/layout/main_button.xml" value="0.2601851851851852" />
         <entry key="..\:/Users/esmeu/Desktop/AndroidTest/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.26296296296296295" />
       </map>
