@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.datechnologies.androidtest.MainActivity;
+import com.datechnologies.androidtest.MessageModel;
 import com.datechnologies.androidtest.R;
 import com.datechnologies.androidtest.api.ChatLogMessageModel;
 
@@ -53,7 +54,10 @@ public class ChatActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 
-        chatAdapter = new ChatAdapter();
+        //loadMessages();
+        ArrayList<MessageModel> messagesList = new ArrayList<>();
+
+        ChatAdapter chatAdapter = new ChatAdapter(this, messagesList);
 
         recyclerView.setAdapter(chatAdapter);
         recyclerView.setHasFixedSize(true);
@@ -61,19 +65,23 @@ public class ChatActivity extends AppCompatActivity {
                 LinearLayoutManager.VERTICAL,
                 false));
 
-        List<ChatLogMessageModel> tempList = new ArrayList<>();
+        ArrayList<MessageModel> tempList = new ArrayList<MessageModel>();
 
-        ChatLogMessageModel chatLogMessageModel = new ChatLogMessageModel();
-        chatLogMessageModel.message = "This is test data. Please retrieve real data.";
+        MessageModel messageTest = new MessageModel(
+                "Tom",
+                "random message",
+                1
+        );
+        messageTest.message = "This is test data. Please retrieve real data.";
 
-        tempList.add(chatLogMessageModel);
-        tempList.add(chatLogMessageModel);
-        tempList.add(chatLogMessageModel);
-        tempList.add(chatLogMessageModel);
-        tempList.add(chatLogMessageModel);
-        tempList.add(chatLogMessageModel);
-        tempList.add(chatLogMessageModel);
-        tempList.add(chatLogMessageModel);
+        tempList.add(messageTest);
+        tempList.add(messageTest);
+        tempList.add(messageTest);
+        tempList.add(messageTest);
+        tempList.add(messageTest);
+        tempList.add(messageTest);
+        tempList.add(messageTest);
+        tempList.add(messageTest);
 
         chatAdapter.setChatLogMessageModelList(tempList);
 
@@ -81,6 +89,15 @@ public class ChatActivity extends AppCompatActivity {
 
         // TODO: Retrieve the chat data from http://dev.rapptrlabs.com/Tests/scripts/chat_log.php
         // TODO: Parse this chat data from JSON into ChatLogMessageModel and display it.
+    }
+
+    public void loadMessages(){
+        MessageModel message = new MessageModel(
+                "Tom",
+                "random message",
+                1
+        );
+        chatAdapter.addMessage(message);
     }
 
     @Override
